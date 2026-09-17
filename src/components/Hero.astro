@@ -1,0 +1,58 @@
+<section class="hero-container">
+    <div class="hero-image">
+    <!-- La ruta de la imagen apunta directamente al nombre del archivo en la carpeta public -->
+    <img src="/foto-portfolio.jpeg" alt="Foto de Adrián" />
+  </div>
+  
+    <div class="hero-text">
+    <h1>Buenas, soy Adrián.</h1>
+    <p>Bienvenido a mi portafolio. 
+        <br>
+        Soy desarrollador web y aquí puedes ver mis últimos proyectos.</p>
+  </div>
+  
+
+</section>
+
+<style>
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 60px auto;
+  gap: 40px;
+  
+  /* --- Efecto de recuadro difuminado --- */
+  background-color: #1b2437; /* El 0.4 indica la transparencia */
+  backdrop-filter: blur(18px); /* Crea el efecto borroso en lo que hay detrás */
+  -webkit-backdrop-filter: blur(12px); /* Compatibilidad extra para navegadores */
+  border: 0.8px solid rgba(19, 22, 80, 0.795); /* Un borde sutil para darle aspecto de cristal */
+  
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+  .hero-text h1 {
+    color: #1f0839;
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+    color: #acb327ad;
+    line-height: 1.5;
+  }
+
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Volvemos a rellenar todo el círculo */
+  object-position: center 20%; /* Ajustamos un poco hacia arriba para centrar tu cara */
+  border-radius: 50%;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+}
+</style>
